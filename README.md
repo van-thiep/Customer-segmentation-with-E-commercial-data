@@ -18,6 +18,8 @@ M sẽ sử dụng bộ dữ liệu này để cluster products, cluster custome
 Trong phần này m sẽ sử dụng cột description và những thông tin về giá để phân cụm sản phẩm. Đối với dữ liệu trong cột description m sẽ lấy ra các từ khóa trong mỗi description và sử dụng chúng làm feature. Ý tưởng của phần này là những sản phẩm có description chứa các từ khóa giống nhau có thể được phân vào cùng một cụm. Ngoài ra m cũng sử dụng thông tin về giá. M chia giá của sản phẩm thành các mức khác nhau và phân sản phẩm vào từng mức giá. Ys tưởng là những sản phầm có mức giá gần giống nhau sẽ có khả năng thuộc cùng một cụm.
 
    Sau khi đã tạo feature xong, m sử dụng KMeans và Gausisian mixture để phân cụm sản phẩm.
+   
+   Ngoài ra description là dữ liệu dạng text do đó ta có thể sử dụng các kỹ thuật **topic modeling** như **Gensim Linear Discriminant Analyse** để phân loại sản phẩm
 
 4. Customer category
 
